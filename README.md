@@ -224,17 +224,9 @@ Use `beamng_v3`. The others are kept for reference.
 
 ---
 
-## Demo
-
-- [BeamNG forum thread](https://forum.beamng.tech/t/demo-of-beamng-bridge-for-openpilot/451) — community discussion with setup notes
-- [YouTube demo](https://www.youtube.com/watch?v=I-7zSl75KWM&t=2s) — video of openpilot driving in BeamNG
-
-The forum thread also shows an alternative approach using [SimHub](https://www.simhubdash.com/) to extract vehicle data from BeamNG instead of beamngpy directly. Worth looking at if you want a different data collection path.
-
----
-
 ## Related Work
 
+- [Independent BeamNG+Openpilot bridge](https://forum.beamng.tech/t/demo-of-beamng-bridge-for-openpilot/451) — a separate implementation by a different author, also bridging BeamNG with openpilot. Uses [SimHub](https://www.simhubdash.com/) for vehicle data extraction instead of beamngpy. [Video demo](https://www.youtube.com/watch?v=I-7zSl75KWM&t=2s).
 - [VehicleSec '25 paper](https://www.usenix.org/conference/vehiclesec25) — describes this framework and telematics data collection methodology
 - [PIVOT Project](https://pivot-auto.org/) — datasets collected using this framework will be published here
 - New version (WIP): replaces beamngpy with a CAN bus layer using custom Lua modules for BeamNG — eliminates the camera bottleneck and enables proper automotive security research (CAN injection, replay attacks, etc.)
